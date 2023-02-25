@@ -1,6 +1,6 @@
-const express = require('express');
+const express = require("express");
 const route = express.Router();
 
-const allUsers = require('../Controller/allUsers');
-route.post('/public', allUsers);
+const { addUser } = require("../Controller/allUsers");
+route.post("/public", addUser);
 module.exports = route;
